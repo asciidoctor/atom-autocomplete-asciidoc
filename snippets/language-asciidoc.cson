@@ -1,0 +1,181 @@
+'.source.asciidoc:not(.markup.code)':
+
+  # Blocks
+  #
+  'Comment Block':
+    description: 'Comment block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#comments'
+    prefix: '//'
+    body: '''
+      ////
+      $1
+      ////
+      $0
+      '''
+  'Sidebar Block':
+    description: 'Sidebar block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#delimited-blocks'
+    prefix: '**'
+    body: '''
+      .${1:title}
+      ****
+      ${2}
+      ****
+      $0
+      '''
+  'Example Block':
+    description: 'Example block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#example'
+    prefix: '=='
+    body: '''
+      .${1:title}
+      ====
+      ${2}
+      ====
+      $0
+      '''
+  'Listing Block':
+    description: 'Listing block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#listing-blocks'
+    prefix: '--'
+    body: '''
+      ----
+      $1
+      ----
+      $0
+      '''
+  'Source Block':
+    description: 'Source block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#listing-blocks'
+    prefix: '--$'
+    body: '''
+      [source, $1]
+      ----
+      $2
+      ----
+      $0
+      '''
+  'Literal Block':
+    description: 'Literal block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#literal-text-and-blocks'
+    prefix: ',,'
+    body: '''
+      ....
+      $1
+      ....
+      $0
+      '''
+  'Passthrough Block':
+    description: 'Passthrough block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#pass-bl'
+    prefix: '++'
+    body: '''
+      ++++
+      $1
+      ++++
+      $0
+      '''
+  'Quote Block':
+    description: 'Quote block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#quote'
+    prefix: '__'
+    body: '''
+      [quote, ${1:attribution}, ${2:citetitle}]
+      ____
+      $3
+      ____
+      $0
+      '''
+  'Open Block':
+    description: 'Open block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#open-blocks'
+    prefix: '~~'
+    body: '''
+      --
+      $1
+      --
+      $0
+      '''
+  'Table Block':
+    description: 'Table block'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#tables'
+    prefix: '|='
+    body: '''
+      |===
+      |$1
+      |===
+      '''
+  'Block Image':
+    description: 'Block image'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#images'
+    prefix: 'image'
+    body: '''
+      image::${1:target}[${2:alt}]
+
+      $0
+      '''
+
+  # Sections
+  #
+  'Document Title':
+    description: 'Document title (single-line syntax)'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#document-title'
+    prefix: '=0'
+    body: '''
+      = $1
+      $0
+      '''
+  'Section 0 / Part':
+    description: 'Level 0 section / part (single-line syntax)'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#sections'
+    prefix: '=1'
+    body: '''
+      = $1
+
+      $0
+      '''
+  'Section 1 / Chapter':
+    description: 'Level 1 section / chapter (single-line syntax)'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#sections'
+    prefix: '=2'
+    body: '''
+      == $1
+
+      $0
+      '''
+  'Section 2':
+    description: 'Level 2 section (single-line syntax)'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#sections'
+    prefix: '=3'
+    body: '''
+      === $1
+
+      $0
+      '''
+  'Section 3':
+    description: 'Level 3 section (single-line syntax)'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#sections'
+    prefix: '=4'
+    body: '''
+      ==== $1
+
+      $0
+      '''
+  'Section 4':
+    description: 'Level 4 section (single-line syntax)'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#sections'
+    prefix: '=5'
+    body: '''
+      ===== $1
+
+      $0
+      '''
+  'Section 5':
+    description: 'Level 5 section (single-line syntax)'
+    descriptionMoreURL: 'http://asciidoctor.org/docs/user-manual/#sections'
+    prefix: '=6'
+    body: '''
+      ====== $1
+
+      $0
+      '''

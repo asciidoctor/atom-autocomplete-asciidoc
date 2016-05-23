@@ -7,12 +7,24 @@
     "asciidoc",
     "autocomplete"
   ],
-  "repository": "https://github.com/ldez/atom-autocomplete-asciidoc.git",
+  "repository": "https://github.com/asciidoctor/atom-autocomplete-asciidoc",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "dependencies": {
+    "season": "^5.3",
+    "lodash": "~4.12.0"
+  },
   "devDependencies": {
     "coffeelint": "^1.15.0"
-  }
+  },
+  "main": "lib/main"
 }
