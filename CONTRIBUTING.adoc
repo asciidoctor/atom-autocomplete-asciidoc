@@ -26,6 +26,12 @@ Labels are added to issues and pull request for clarity, in the present but also
 |declined    | a decision was made not to pursue
 |===
 
+.Category labels
+|===
+|snippets       | included snippets to reduce the amount of typing
+|completions    | included completions to reduce the amount of typing
+|===
+
 .Status labels
 |===
 |WIP   | currently a Work In Progress, not ready for a merge
