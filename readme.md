@@ -7,4 +7,5 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/asciidoctor/atom-autocomplete-asciidoc/blob/master/LICENSE.md)
 
 AsciiDoc language autocompletions in Atom.
+
 Uses the [autocomplete-plus](https://github.com/atom/autocomplete-plus) package.
