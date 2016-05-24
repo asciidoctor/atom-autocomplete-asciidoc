@@ -34,8 +34,6 @@ Labels are added to issues and pull request for clarity, in the present but also
 
 == Development
 
-TODO
-
 === Retrieve the source code
 
 The source code for this plugin is available from https://github.com/asciidoctor/atom-autocomplete-asciidoc
@@ -116,20 +114,15 @@ sh build-package.sh
 
 == Compat mode not supported
 
-This grammar implements the modern AsciiDoc syntax endorsed by Asciidoctor.
+This package implements the modern AsciiDoc syntax endorsed by Asciidoctor.
 It does not support the legacy AsciiDoc syntax permitted by Asciidoctor with http://asciidoctor.org/docs/migration/#compat-mode[compat mode] enabled or by AsciiDoc Python.
-Additionally, two-line section titles are not recognized by this grammar.
 
 The reason compat mode is not supported is two-fold.
 
 . An Atom grammar is not capable of supporting different modes based on a setting within the document.
 . Since this project is part of the Asciidoctor organization, which endorses a modern, consistent AsciiDoc syntax, this package is aimed at encouraging migration away from the legacy syntax.
 
-Furthermore, this grammar doesn't support the two-line section titles for both the aforementioned reasons.
-That style confuses the language highlighter and we consider using that style a bad practice.
-
-We hope this grammar encourages authors to write good, clean, modern AsciiDoc.
-So that's the AsciiDoc we designed this grammar to recognize.
+We hope this package encourages authors to write good, clean, modern AsciiDoc.
 
 == Snippets
 
