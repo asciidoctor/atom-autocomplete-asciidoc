@@ -25,7 +25,7 @@ describe "AsciiDoc autocompletions", ->
       atom.packages.activatePackage('autocomplete-asciidoc').then (p) -> pack = p
 
     runs ->
-      provider = pack.mainModule.getCompletionProvider()
+      provider = pack.mainModule.provide()
 
     waitsFor 'provider is loaded', ->
       Object.keys(provider.attributes).length > 0
