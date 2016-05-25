@@ -31,7 +31,7 @@ git config --global user.name "${USER_NAME}"
 
 ## Loading SSH key
 echo 'Loading key...'
-openssl aes-256-cbc -K "$encrypted_86f473c09ba9_key" -iv "$encrypted_86f473c09ba9_iv" -in .travis/${SSH_KEY_NAME}.enc -out ~/.ssh/${SSH_KEY_NAME} -d
+openssl aes-256-cbc -K "$encrypted_c5ec8ec61657_key" -iv "$encrypted_c5ec8ec61657_iv" -in .travis/${SSH_KEY_NAME}.enc -out ~/.ssh/${SSH_KEY_NAME} -d
 eval "$(ssh-agent -s)"
 chmod 600 ~/.ssh/${SSH_KEY_NAME}
 ssh-add ~/.ssh/${SSH_KEY_NAME}
